@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Recipe Finder</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#recipe-container">Recipes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Find Your Favourite Recipe</h2>
+      <p>Search recipes using live API data from around the world.</p>
+
+      <form id="search-form" class="search-box">
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Enter recipe name (e.g., chicken, pasta, cake)" 
+          aria-label="Search recipes"
+        >
+        <button type="submit" id="search-button">Search</button>
+      </form>
+    </section>
+
+    <!-- Feedback States -->
+    <p id="loading" class="status-message loading-state"></p>
+    <p id="error-message" class="status-message error-state"></p>
+
+    <!-- Recipe Grid -->
+    <section id="recipe-container" class="recipe-container"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Recipe Finder | Built for Practice</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
